@@ -71,10 +71,10 @@ class ExpansionWidget extends StatefulWidget {
   final Alignment expandedAlignment;
 
   @override
-  _ExpansionWidgetState createState() => _ExpansionWidgetState();
+  ExpansionWidgetState createState() => ExpansionWidgetState();
 }
 
-class _ExpansionWidgetState extends State<ExpansionWidget>
+class ExpansionWidgetState extends State<ExpansionWidget>
     with SingleTickerProviderStateMixin {
   static final Animatable<double> _easeInTween =
       CurveTween(curve: Curves.easeIn);
@@ -197,3 +197,4 @@ class _ExpansionWidgetState extends State<ExpansionWidget>
     );
   }
 }
+
